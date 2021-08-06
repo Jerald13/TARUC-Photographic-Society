@@ -1,0 +1,21 @@
+.background{
+    background-image: url('picture/flora.jpg');
+}
+.content-login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+tr>td.showHide{
+    font-size: smaller;
+}   
+tr>td>a{
+    font-size:15px;
+    color:blue;
+}
+
+
+
+

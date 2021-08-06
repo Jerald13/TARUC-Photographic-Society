@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="together.css" rel="stylesheet">
+        <link href="login.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+    <body class="background">
+        <form>
+            <div class="content-login-form">
+                <table>
+                    <thead>
+                        <th colspan="3" style="text-align: center">LOGIN</th>
+                    </thead>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td colspan="2"><input type="text" id="name" name="name" pattern="[a-zA-z]{4,15}" minlength="4" maxlength="15" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td colspan="2"><input type="password" id="password" name="password" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td class="showHide"><input type="checkbox" onclick="showHide()">Show Password</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><a href="register.html" >Sign up</td>
+                        <td style="text-align: right"><a href="forgot.html" >Forgot Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        
+                        <td colspan="2" style="text-align: right"><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+    </body>
+    <script>
+        function showHide() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+</html>

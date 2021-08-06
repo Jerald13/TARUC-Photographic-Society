@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="together.css" rel="stylesheet">
+        <link href="login.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Forgot Password</title>
+    </head>
+    <body class="background">
+        <form>
+            <div class="content-login-form">
+                <table>
+                    <thead>
+                        <th colspan="3" style="text-align: cente; position:relative; left: 20px;">Forgot Password</th>
+                    </thead>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td colspan="2"><input type="email" name="email" id="email" placeholder="abc@tarc.edu.my" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td colspan="2"><input type="password" id="password" name="password" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td class="showHide"><input type="checkbox" onclick="showHide()">Show Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        
+                        <td colspan="2" style="text-align: right"><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+    </body>
+    <script>
+        function showHide() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+</html>

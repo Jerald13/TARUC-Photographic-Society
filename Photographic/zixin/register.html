@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="together.css" rel="stylesheet">
+        <link href="register.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Register</title>
+    </head>
+    <body class="background">
+        <form action="login.html">
+            <div class="content-register-form">
+                <table>
+                    <thead>
+                        <th colspan="3" style="text-align: center">Sign up</th>
+                    </thead>
+                    <tr>
+                        <td><label for="name">Account Name:</label></td>
+                        <td colspan="2"><input type="text" id="name" name="name" pattern="[a-zA-z]{4,15}" minlength="4" maxlength="15" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td colspan="2"><input type="password" id="password" name="password" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cfm-password">Confirm Password:</label></td>
+                        <td colspan="2"><input type="password" id="cfm-password" name="cfm-password" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td colspan="2"><input type="email" name="email" id="email" placeholder="abc@tarc.edu.my" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone number:</label></td>
+                        <td colspan="2"><input type="text" name="phone" id="phone" placeholder="012-1234567" pattern="[0][1][0-9]-[0-9]{7,8}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td colspan="2"><input type="text" name="gender" id="gender" placeholder="M/F" pattern="([Mm]|[Ff])" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        
+                        <td colspan="2" style="text-align: right"><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

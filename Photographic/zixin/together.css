@@ -1,0 +1,53 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.background{
+    background-image: url('picture/flora.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+[class^=content]{
+    width:500px;
+    display:block;
+    margin: auto;
+    padding:50px;
+    font-size:17px;
+    background-color: blanchedalmond;
+}
+
+table{
+    width:350px;
+    margin:auto;
+}
+input[type="text"],input[type="email"],select#state,input[type="password"]{
+    border:none;
+    border:2px rgb(0, 20, 77) solid;
+    border-radius: 4px;
+    width:100%;
+    height:30px;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 15px;
+}
+input[type="text"]:hover,input[type="email"]:hover,select#state:hover,input[type="password"]:hover{
+    background-color: rgb(146, 255, 255);
+
+}
+input[type="text"]:focus,input[type="email"]:focus,select#state:focus,input[type="password"]:focus{
+    background-color: rgb(49, 204, 252);
+}
+input[type="reset"],input[type="submit"]{
+    font-size: 15px;
+    background-color: blue;
+    color:white;
+    border-radius: 50%;
+    width:100px;
+}

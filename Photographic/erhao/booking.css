@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box
+  }
+  
+  html,
+  body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+  }
+  
+  h1,h2{
+    font-family: 'font-baloo';
+    margin: 5px;
+  }
+  
+  h1{ color: #cccccc; }
+  h2{ color: #99b3ff; }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover{
+    color: #668cff;
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .btn {
+    padding: .5rem 2rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.1em;
+    font-family: 'font-baloo';
+    text-align: center;
+  }
+  
+  .heading{
+    text-align: center;
+    font-size: 50px;
+
+  }
+  
+  /* CONTENT */
+  
+  .wrapper {
+    width: 100%;
+    margin: 30px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    width: 70%;
+    float: left;
+  }
+  
+  .content .post {
+    width: 100%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: black;
+    position: relative;
+    border: 1px solid #404040;
+  }
+  
+  .content .post .post-preview i {
+    color: #999999;
+    font-size: .8em;
+  }
+  
+  .content .post .description {
+    line-height: 1.5em;
+    font-size: 1.03em;
+    color: #a6a6a6;
+    font-family: 'font-rale';
+  }
+  
+  .content .post .booking {
+    background: #0086b3;
+    border-radius: 0px;
+    position: absolute;
+    top: 210px;
+    left:10px;
+    color: white !important;
+  }
+  
+  .content .post .booking:hover {
+    background: #006080;
+    color: white !important;
+    transition: .25s;
+  }
+  
+  .content .post .cancel {
+    background: #0086b3;
+    border-radius: 0px;
+    position: absolute;
+    top: 210px;
+    left:110px;
+    color: white !important;
+  }
+  
+  .content .post .cancel:hover {
+    background: #006080;
+    color: white !important;
+    transition: .25s;
+  }
+
+  .content .post .post-image {
+    width: 35%;
+    height: 100%;
+    float: right; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .content .post .post-preview {
+    width: 60%;
+    padding: 10px;
+    float: left;
+    
+  }
+  
+  .content .heading {
+    margin: 20px;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (max-width: 934px) {
+    .wrapper {
+      width: 100%;
+      margin: 30px auto 30px;
+    }
+  
+    .content .post {
+      width: 100%;
+    }
+  
+     .content {
+      width: 100%;
+      padding: 10px;
+    }
+  
+     .content .post {
+      height: auto;
+    }
+  
+    .content .post .post-image {
+      width: 100%;
+    }
+  
+    .content .post .post-preview {
+      width: 100%;
+    }
+  
+    .content .post .booking {
+      position: static;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .content .post .cancel {
+      position: static;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
+  
+  @media only screen and (max-width : 600px) {
+    .content .post {
+      height: auto;
+    }
+  
+    .content .post .post-image {
+      width: 100%;
+    }
+  
+    .content .post .post-preview {
+      width: 100%;
+    }
+  
+    .content .post .booking {
+      position: static;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .content .post .cancel {
+      position: static;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
